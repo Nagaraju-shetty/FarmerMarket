@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Product - Farmer Market</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<div class="container mt-5">
+    <div class="card shadow-sm mx-auto" style="max-width: 550px;">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0">🗑️ Delete Product</h3>
+        </div>
+
+        <div class="card-body text-center">
+            <p class="fs-5">
+                Are you sure you want to delete
+                <strong>{{ product.name }}</strong>?
+            </p>
+
+            {% if product.image %}
+                <img src="{{ product.image.url }}"
+                     alt="{{ product.name }}"
+                     class="img-fluid rounded mb-3"
+                     style="max-height: 180px;">
+            {% endif %}
+
+            <p class="text-danger">
+                Please confirm before permanently deleting this product.
+            </p>
+
+            <form method="POST">
+                {% csrf_token %}
+
+                <button type="submit" class="btn btn-danger">
+                    Yes, Delete
+                </button>
+
+                <a href="{% url 'farmer_products' %}"
+                   class="btn btn-secondary">
+                    Cancel
+                </a>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

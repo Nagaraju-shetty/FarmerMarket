@@ -1,0 +1,291 @@
+
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: kn\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Home"
+msgstr "ಮುಖಪುಟ"
+
+msgid "Products"
+msgstr "ಉತ್ಪನ್ನಗಳು"
+
+msgid "Farmers"
+msgstr "ರೈತರು"
+
+msgid "My Products"
+msgstr "ನನ್ನ ಉತ್ಪನ್ನಗಳು"
+
+msgid "Farmer Dashboard"
+msgstr "ರೈತರ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್"
+
+msgid "My Customer Orders"
+msgstr "ನನ್ನ ಗ್ರಾಹಕರ ಆರ್ಡರ್‌ಗಳು"
+
+msgid "My Orders"
+msgstr "ನನ್ನ ಆರ್ಡರ್‌ಗಳು"
+
+msgid "My Profile"
+msgstr "ನನ್ನ ಪ್ರೊಫೈಲ್"
+
+msgid "Logout"
+msgstr "ಲಾಗ್‌ಔಟ್"
+
+msgid "Login"
+msgstr "ಲಾಗಿನ್"
+
+msgid "Fresh From Farmers"
+msgstr "ರೈತರಿಂದ ತಾಜಾ ಉತ್ಪನ್ನಗಳು"
+
+msgid "Buy fresh and quality products directly from local farmers."
+msgstr "ಸ್ಥಳೀಯ ರೈತರಿಂದ ನೇರವಾಗಿ ತಾಜಾ ಮತ್ತು ಗುಣಮಟ್ಟದ ಉತ್ಪನ್ನಗಳನ್ನು ಖರೀದಿಸಿ."
+msgid "Fresh Products"
+msgstr "ತಾಜಾ ಉತ್ಪನ್ನಗಳು"
+msgid "Search"
+msgstr "ಹುಡುಕಿ"
+msgid "All Products"
+msgstr "ಎಲ್ಲಾ ಉತ್ಪನ್ನಗಳು"
+msgid "Vegetables"
+msgstr "ತರಕಾರಿಗಳು"
+msgid "Fruits"
+msgstr "ಹಣ್ಣುಗಳು"
+msgid "Grains"
+msgstr "ಧಾನ್ಯಗಳು"
+msgid "Search products by name..."
+msgstr "ಉತ್ಪನ್ನಗಳನ್ನು ಹೆಸರಿನ ಮೂಲಕ ಹುಡುಕಿ..."
+
+msgid "Search products by name"
+msgstr "ಉತ್ಪನ್ನಗಳನ್ನು ಹೆಸರಿನ ಮೂಲಕ ಹುಡುಕಿ"
+msgid "My Cart"
+msgstr "ನನ್ನ ಕಾರ್ಟ್"
+msgid "Karnataka Mandi Reference:"
+msgstr "ಕರ್ನಾಟಕ ಮಾರುಕಟ್ಟೆ ಬೆಲೆ ಉಲ್ಲೇಖ:"
+msgid "Farmer:"
+msgstr "ರೈತ:"
+msgid "View Product"
+msgstr "ಉತ್ಪನ್ನವನ್ನು ವೀಕ್ಷಿಸಿ"
+msgid "No products available at the moment."
+msgstr "ಪ್ರಸ್ತುತ ಯಾವುದೇ ಉತ್ಪನ್ನಗಳು ಲಭ್ಯವಿಲ್ಲ."
+msgid "Language"
+msgstr "ಭಾಷೆ"
+msgid "Login"
+msgstr "ಲಾಗಿನ್"
+
+msgid "Logout"
+msgstr "ಲಾಗ್‌ಔಟ್"
+msgid "My Products"
+msgstr "ನನ್ನ ಉತ್ಪನ್ನಗಳು"
+msgid "My Customer Orders"
+msgstr "ನನ್ನ ಗ್ರಾಹಕರ ಆರ್ಡರ್‌ಗಳು"
+msgid "My Orders"
+msgstr "ನನ್ನ ಆರ್ಡರ್‌ಗಳು"
+msgid "My Profile"
+msgstr "ನನ್ನ ಪ್ರೊಫೈಲ್"
+msgid "Fresh From Farmers"
+msgstr "ರೈತರಿಂದ ತಾಜಾ ಉತ್ಪನ್ನಗಳು"
+msgid "Buy fresh and quality products directly from local farmers."
+msgstr "ಸ್ಥಳೀಯ ರೈತರಿಂದ ನೇರವಾಗಿ ತಾಜಾ ಮತ್ತು ಗುಣಮಟ್ಟದ ಉತ್ಪನ್ನಗಳನ್ನು ಖರೀದಿಸಿ."
+msgid "Clear"
+msgstr "ತೆರವುಗೊಳಿಸಿ"
+msgid "Source:"
+msgstr "ಮೂಲ:"
+msgid "Reference date:"
+msgstr "ಉಲ್ಲೇಖ ದಿನಾಂಕ:"
+msgid "Mandi price currently unavailable"
+msgstr "ಪ್ರಸ್ತುತ ಮಾರುಕಟ್ಟೆ ಬೆಲೆ ಲಭ್ಯವಿಲ್ಲ"
+msgid "Fresh Products"
+msgstr "ತಾಜಾ ಉತ್ಪನ್ನಗಳು"
+msgid "View Product"
+msgstr "ಉತ್ಪನ್ನವನ್ನು ವೀಕ್ಷಿಸಿ"
+msgid "Available Quantity:"
+msgstr "ಲಭ್ಯವಿರುವ ಪ್ರಮಾಣ:"
+msgid "Farmer:"
+msgstr "ರೈತ:"
+msgid "Add to Cart"
+msgstr "ಕಾರ್ಟ್‌ಗೆ ಸೇರಿಸಿ"
+msgid "View Cart"
+msgstr "ಕಾರ್ಟ್ ವೀಕ್ಷಿಸಿ"
+msgid "View your items"
+msgstr "ನಿಮ್ಮ ವಸ್ತುಗಳನ್ನು ವೀಕ್ಷಿಸಿ"
+msgid "My Shopping Basket"
+msgstr "ನನ್ನ ಶಾಪಿಂಗ್ ಬುಟ್ಟಿ"
+msgid "View Cart / Checkout"
+msgstr "ಕಾರ್ಟ್ ವೀಕ್ಷಿಸಿ / ಖರೀದಿ ಪೂರ್ಣಗೊಳಿಸಿ"
+msgid "Back to Products"
+msgstr "ಉತ್ಪನ್ನಗಳಿಗೆ ಹಿಂತಿರುಗಿ"
+msgid "Price:"
+msgstr "ಬೆಲೆ:"
+msgid "Current Quantity:"
+msgstr "ಪ್ರಸ್ತುತ ಪ್ರಮಾಣ:"
+msgid "Total:"
+msgstr "ಒಟ್ಟು:"
+msgid "Quantity:"
+msgstr "ಪ್ರಮಾಣ:"
+msgid "Update Quantity"
+msgstr "ಪ್ರಮಾಣವನ್ನು ನವೀಕರಿಸಿ"
+msgid "Remove Item"
+msgstr "ವಸ್ತುವನ್ನು ತೆಗೆದುಹಾಕಿ"
+msgid "Proceed to Checkout"
+msgstr "ಖರೀದಿ ಪೂರ್ಣಗೊಳಿಸಲು ಮುಂದುವರಿಯಿರಿ"
+msgid "Continue Shopping"
+msgstr "ಖರೀದಿಯನ್ನು ಮುಂದುವರಿಸಿ"
+msgid "Are you sure you want to remove this item?"
+msgstr "ಈ ವಸ್ತುವನ್ನು ತೆಗೆದುಹಾಕಲು ನೀವು ಖಚಿತವಾಗಿದ್ದೀರಾ?"
+msgid "Checkout"
+msgstr "ಖರೀದಿ ಪೂರ್ಣಗೊಳಿಸುವಿಕೆ"
+
+msgid "Back to Cart"
+msgstr "ಕಾರ್ಟ್‌ಗೆ ಹಿಂತಿರುಗಿ"
+
+msgid "Order Summary"
+msgstr "ಆರ್ಡರ್ ಸಾರಾಂಶ"
+
+msgid "Quantity:"
+msgstr "ಪ್ರಮಾಣ:"
+
+msgid "Total Amount:"
+msgstr "ಒಟ್ಟು ಮೊತ್ತ:"
+
+msgid "Choose Payment Method"
+msgstr "ಪಾವತಿ ವಿಧಾನವನ್ನು ಆಯ್ಕೆಮಾಡಿ"
+
+msgid "UPI / QR Demo Payment"
+msgstr "UPI / QR ಪ್ರಾಯೋಗಿಕ ಪಾವತಿ"
+
+msgid "Demo payment only — no real money will be transferred."
+msgstr "ಇದು ಪ್ರಾಯೋಗಿಕ ಪಾವತಿ ಮಾತ್ರ — ನಿಜವಾದ ಹಣ ವರ್ಗಾವಣೆಯಾಗುವುದಿಲ್ಲ."
+
+msgid "Cash on Delivery"
+msgstr "ವಿತರಣೆಯ ಸಮಯದಲ್ಲಿ ನಗದು ಪಾವತಿ"
+msgid "Pay when your order is delivered."
+msgstr "ನಿಮ್ಮ ಆರ್ಡರ್ ವಿತರಿಸಿದಾಗ ಪಾವತಿಸಿ."
+
+msgid "Order Confirmed"
+msgstr "ಆರ್ಡರ್ ದೃಢೀಕರಿಸಲಾಗಿದೆ"
+
+msgid "Order Confirmed!"
+msgstr "ಆರ್ಡರ್ ದೃಢೀಕರಿಸಲಾಗಿದೆ!"
+
+msgid "Your order has been placed successfully."
+msgstr "ನಿಮ್ಮ ಆರ್ಡರ್ ಯಶಸ್ವಿಯಾಗಿ ಸಲ್ಲಿಸಲಾಗಿದೆ."
+
+msgid "Order ID:"
+msgstr "ಆರ್ಡರ್ ಐಡಿ:"
+
+msgid "Payment Method:"
+msgstr "ಪಾವತಿ ವಿಧಾನ:"
+
+msgid "Cash on Delivery"
+msgstr "ವಸ್ತು ತಲುಪಿದಾಗ ಪಾವತಿ"
+
+msgid "Payment Status:"
+msgstr "ಪಾವತಿ ಸ್ಥಿತಿ:"
+
+msgid "Pending"
+msgstr "ಬಾಕಿಯಿದೆ"
+
+msgid "Continue Shopping"
+msgstr "ಖರೀದಿ ಮುಂದುವರಿಸಿ"
+
+msgid "View Cart"
+msgstr "ಕಾರ್ಟ್ ವೀಕ್ಷಿಸಿ"
+
+msgid "My Orders"
+msgstr "ನನ್ನ ಆರ್ಡರ್‌ಗಳು"
+
+msgid "Home"
+msgstr "ಮುಖಪುಟ"
+
+msgid "Order ID"
+msgstr "ಆರ್ಡರ್ ಐಡಿ"
+
+msgid "Order Date"
+msgstr "ಆರ್ಡರ್ ದಿನಾಂಕ"
+
+msgid "Total Amount"
+msgstr "ಒಟ್ಟು ಮೊತ್ತ"
+
+msgid "Status"
+msgstr "ಸ್ಥಿತಿ"
+
+msgid "Pending"
+msgstr "ಬಾಕಿಯಿದೆ"
+
+msgid "Confirmed"
+msgstr "ದೃಢೀಕರಿಸಲಾಗಿದೆ"
+
+msgid "Shipped"
+msgstr "ರವಾನಿಸಲಾಗಿದೆ"
+
+msgid "Delivered"
+msgstr "ತಲುಪಿಸಲಾಗಿದೆ"
+
+msgid "Cancelled"
+msgstr "ರದ್ದುಗೊಳಿಸಲಾಗಿದೆ"
+
+msgid "You have not placed any orders yet."
+msgstr "ನೀವು ಇನ್ನೂ ಯಾವುದೇ ಆರ್ಡರ್ ಮಾಡಿಲ್ಲ."
+
+msgid "Continue Shopping"
+msgstr "ಖರೀದಿ ಮುಂದುವರಿಸಿ"
+
+msgid "Order Details"
+msgstr "ಆರ್ಡರ್ ವಿವರಗಳು"
+
+msgid "Order Date:"
+msgstr "ಆರ್ಡರ್ ದಿನಾಂಕ:"
+
+msgid "Status:"
+msgstr "ಸ್ಥಿತಿ:"
+
+msgid "Total Amount:"
+msgstr "ಒಟ್ಟು ಮೊತ್ತ:"
+
+msgid "Products Ordered"
+msgstr "ಆರ್ಡರ್ ಮಾಡಿದ ಉತ್ಪನ್ನಗಳು"
+
+msgid "Product"
+msgstr "ಉತ್ಪನ್ನ"
+
+msgid "Quantity"
+msgstr "ಪ್ರಮಾಣ"
+
+msgid "Price"
+msgstr "ಬೆಲೆ"
+
+msgid "Subtotal"
+msgstr "ಉಪಮೊತ್ತ"
+
+msgid "No products found for this order."
+msgstr "ಈ ಆರ್ಡರ್‌ನಲ್ಲಿ ಯಾವುದೇ ಉತ್ಪನ್ನಗಳು ಕಂಡುಬಂದಿಲ್ಲ."
+
+msgid "Back to My Orders"
+msgstr "ನನ್ನ ಆರ್ಡರ್‌ಗಳಿಗೆ ಹಿಂತಿರುಗಿ"
+
+msgid "My Profile"
+msgstr "ನನ್ನ ಪ್ರೊಫೈಲ್"
+
+msgid "Back to Home"
+msgstr "ಮುಖಪುಟಕ್ಕೆ ಹಿಂತಿರುಗಿ"
+
+msgid "Welcome"
+msgstr "ಸ್ವಾಗತ"
+
+msgid "Username:"
+msgstr "ಬಳಕೆದಾರರ ಹೆಸರು:"
+
+msgid "Full Name:"
+msgstr "ಪೂರ್ಣ ಹೆಸರು:"
+
+msgid "Phone Number:"
+msgstr "ದೂರವಾಣಿ ಸಂಖ್ಯೆ:"
+
+msgid "City:"
+msgstr "ನಗರ:"
+
+msgid "Address:"
+msgstr "ವಿಳಾಸ:"
+
+msgid "Edit Profile"
+msgstr "ಪ್ರೊಫೈಲ್ ಸಂಪಾದಿಸಿ"

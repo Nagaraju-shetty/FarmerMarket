@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product and Mandi Price Comparison | FarmerMarket</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7f4;
+            margin: 0;
+            padding: 20px;
+            color: #243024;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        h1 {
+            color: #246b38;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            background: white;
+            border-radius: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 850px;
+        }
+
+        th, td {
+            padding: 13px;
+            border-bottom: 1px solid #e5e9e5;
+            text-align: left;
+        }
+
+        th {
+            background: #246b38;
+            color: white;
+        }
+
+        .available {
+            color: #16803c;
+            font-weight: bold;
+        }
+
+        .unavailable {
+            color: #b45309;
+        }
+
+        .note {
+            color: #555;
+            font-size: 14px;
+            margin-top: 16px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 15px;
+            color: #246b38;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <a class="back-link" href="/">← Back to Home</a>
+
+    <h1>My Products — Mandi Price Comparison</h1>
+
+    <p>
+        Compare your website's selling prices with the latest saved
+        matching mandi prices.
+    </p>
+
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>Website Product</th>
+                    <th>Selling Price (₹/unit)</th>
+                    <th>Mandi Commodity</th>
+                    <th>Mandi Market</th>
+                    <th>District</th>
+                    <th>Modal Price (₹/quintal)</th>
+                    <th>Price Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for item in matched_products %}
+                <tr>
+                    <td>{{ item.product.name }}</td>
+                    <td>₹{{ item.product.price|floatformat:2 }}</td>
+
+                    {% if item.market_price %}
+                    <td>{{ item.market_price.product_name }}</td>
+                    <td>{{ item.market_price.market_name }}</td>
+                    <td>{{ item.market_price.location }}</td>
+                    <td>₹{{ item.market_price.modal_price|floatformat:2 }}</td>
+                    <td>{{ item.market_price.recorded_date|date:"d M Y" }}</td>
+                    <td class="available">Mandi price found</td>
+                    {% else %}
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td>—</td>
+                    <td class="unavailable">Mandi price unavailable</td>
+                    {% endif %}
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="8">
+                        No available products have been listed on your website yet.
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <p class="note">
+        Mandi prices are reported per quintal (100 kg), while website
+        selling prices may use different units. Compare prices only after
+        confirming that both refer to the same quantity and unit.
+        A missing match means no exact commodity-name match was found
+        in the saved mandi records.
+    </p>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+{% load i18n %}
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - Farmer Market</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-success navbar-dark">
+    <div class="container">
+
+        <a class="navbar-brand fw-bold" href="/">
+            🌱 Farmer Market
+        </a>
+
+        <a href="/cart/" class="btn btn-light">
+    ← {% translate "Back to Cart" %}
+</a>
+
+    </div>
+</nav>
+
+
+<div class="container mt-5">
+
+    <h2 class="mb-4">🛍️ {% translate "Checkout" %}</h2>
+
+    <div class="card shadow-sm">
+
+        <div class="card-body">
+
+            <h4>{% translate "Order Summary" %}</h4>
+
+            {% for item in cart_items %}
+
+            <div class="d-flex justify-content-between border-bottom py-3">
+
+                
+<div>
+    <strong>{{ item.product.name }}</strong>
+    <br>
+    Official mandi price: ₹{{ item.mandi_price_per_kg }}/kg
+    <br>
+    {% translate "Quantity:" %} {{ item.quantity }}
+</div>
+
+
+                <div>
+                    ₹{{ item.total }}
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+            <div class="text-end mt-4">
+
+               <h4>
+    {% translate "Total Amount:" %}
+    <span class="text-success">₹{{ total_amount }}</span>
+</h4>
+
+            </div>
+
+            
+<div class="mt-4">
+    <form method="POST">
+        {% csrf_token %}
+
+        <h5 class="mb-3">💳 {% translate "Choose Payment Method" %}</h5>
+
+        <div class="form-check border rounded p-3 mb-3">
+            <input
+                class="form-check-input"
+                type="radio"
+                name="payment_method"
+                id="upi"
+                value="UPI"
+                required
+            >
+            <label class="form-check-label" for="upi">
+                <strong>{% translate "UPI / QR Demo Payment" %}</strong>
+                <div class="text-muted small">
+                    {% translate "Demo payment only — no real money will be transferred." %}
+                </div>
+            </label>
+        </div>
+
+        <div class="form-check border rounded p-3 mb-3">
+            <input
+                class="form-check-input"
+                type="radio"
+                name="payment_method"
+                id="cod"
+                value="COD"
+                required
+            >
+            <label class="form-check-label" for="cod">
+                <strong>{% translate "Cash on Delivery" %}</strong>
+                <div class="text-muted small">
+                    {% translate "Pay when your order is delivered." %}
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-check border rounded p-3 mb-3">
+            <input
+                class="form-check-input"
+                type="radio"
+                name="payment_method"
+                id="razorpay"
+                value="RAZORPAY"
+                required
+            >
+            <label class="form-check-label" for="razorpay">
+                <strong>Razorpay Online Payment</strong>
+                <div class="text-muted small">
+                    Pay securely using the Razorpay test payment gateway.
+                </div>
+            </label>
+        </div>
+
+
+        <div class="text-center mt-4">
+            <button type="submit" class="btn btn-success btn-lg">
+                Place Order ✅
+            </button>
+        </div>
+    </form>
+</div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

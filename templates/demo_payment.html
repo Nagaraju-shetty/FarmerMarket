@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmerMarket - UPI Payment</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f6fb;
+            margin: 0;
+            padding: 25px 15px;
+        }
+
+        .payment-box {
+            max-width: 460px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #176b45;
+        }
+
+        .amount {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .upi-id {
+            background: #eef7f1;
+            padding: 12px;
+            border-radius: 8px;
+            overflow-wrap: anywhere;
+            font-weight: bold;
+        }
+
+        .qr-code {
+            width: 230px;
+            max-width: 100%;
+            height: auto;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .notice {
+            background: #fff4d6;
+            color: #755500;
+            padding: 12px;
+            border-radius: 8px;
+            line-height: 1.5;
+        }
+
+        button {
+            background: #176b45;
+            color: white;
+            border: none;
+            padding: 13px 22px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 18px;
+            color: #176b45;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="payment-box">
+        <h1>FarmerMarket Payment</h1>
+
+        <p>Order ID: {{ order.id }}</p>
+
+        <div class="amount">
+            Amount: ₹{{ order.total_amount }}
+        </div>
+
+        
+<h3>Scan the QR Code to Pay</h3>
+
+<img
+    src="data:image/png;base64,{{ qr_base64 }}"
+    alt="UPI QR Code for Order {{ order.id }}"
+    class="qr-code"
+    style="width:230px; max-width:100%; height:auto;"
+>
+
+<p>UPI ID: {{ upi_id }}</p>
+<p>Order Amount: ₹{{ order.total_amount }}</p>
+
+
+        <h3>Or use this UPI ID</h3>
+
+        <p class="upi-id">9945463812@kotakbank</p>
+
+<a
+    href="upi://pay?pa=9945463812%40kotakbank&amp;pn=FarmerMarket&amp;am={{ order.total_amount|floatformat:2 }}&amp;cu=INR&amp;tn=Order%20{{ order.id }}"
+    class="pay-button"
+    style="display:inline-block; background:#176b45; color:white;
+           padding:13px 22px; border-radius:8px;
+           text-decoration:none; margin:12px 0;"
+>
+    Pay ₹{{ order.total_amount }} with UPI
+</a>
+
+        <button
+            type="button"
+            onclick="navigator.clipboard.writeText('9945463812@kotakbank').then(() => alert('UPI ID copied')).catch(() => alert('Please copy the UPI ID manually'))"
+        >
+            Copy UPI ID
+        </button>
+
+        <p class="notice">
+            Demo payment page. After making a payment, confirmation
+            must be verified separately. Clicking the button below
+            does not verify a real payment.
+        </p>
+
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Continue with Demo Confirmation</button>
+        </form>
+
+        <a href="{% url 'home' %}">Return to Home</a>
+    </div>
+</body>
+</html>
